@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+footer {
+    margin-top: auto;
+}
+.navbar {
+    position: relative;
+    border-radius: 10px;
+    top: 20px;
+    z-index: 1;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li {
+    margin-right: 20px;
+}
+.content {
+    margin-top: -80px;
+}

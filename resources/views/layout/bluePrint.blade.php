@@ -1,69 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Judul</title>
-        {{-- <link rel="stylesheet" href="{{ asset('css/uikit-rtl.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/uikit-rtl.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/uikit.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}"> --}}
-        <style>
-            html, body {
-              margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        footer {
-            position: relative;
-            bottom: 0;
-            background-color: #193A6F;
-            color: white;
-            width: 100%;
-        }
-        a{
-            text-decoration: none;
-        }
-        
-  .navbar {
-    margin-top: 0px;
-    position: absolute;
-    border: 1px solid black;
-    top: 20px;
-    left: 50%; /* Place the navbar in the center */
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255); /* Set background color with opacity */
-    /* padding: 10px 20px; */
-    border-radius: 10px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(46, 39, 174) 42, 42); /* Adjust link color */
-  }
-        </style>
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I Hope its last</title>
+    {{-- Link --}}
+    <link rel="stylesheet" href="{{ asset('css/master.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.9/dist/css/uikit.min.css" />
-
-  </head>
-  <body style="background-color: rgb(26, 26, 243))55, 244)">
-      {{-- Container --}}
-      <div class="container">
+    {{-- End of Link --}}
+</head>
+<body>
         {{-- <!-- Navbar --> --}}
-        <div class="header-container" style="position: relative;">
+        <div class="container">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a href="#"><img src="{{ asset('image/lbb.png') }}" alt="" width="60"></a>
@@ -113,21 +64,15 @@
             </div>
           </nav>
         </div>
-      </div>
         {{-- <!-- End Navbar --> --}}
-      
         {{-- Content --}}
-        <div class="content" style="height: 100%; margin:-80px">
-          <div class="container">
-            <img src="{{ asset('image/fb.png') }}" alt="" width="500">
+        <div class="content">
+              <img src="{{ asset('image/fb.png') }}" alt="" width="500">
           </div>
-        </div>
-        {{-- End of Content --}}
-      </div>
-        {{-- End Of Container --}}
-      
+          {{-- End of Content --}}
+    
         {{-- Footer --}}
-        <footer>
+        <footer style="background-color: #193A6F">
             <div class="container">
                 <div class="row">
                       <div class="col-sm mt-4 mb-1">
@@ -175,14 +120,12 @@
         </footer>
         {{-- End of Footer --}}
 
-    {{-- <script src"{{ asset('js/uikit-icons.js') }}"></script>
-    <script src"{{ asset('js/uikit-icons.min.js') }}"></script>
-    <script src"{{ asset('js/uikit.js') }}"></script>
-    <script src"{{ asset('js/uikit.min.js') }}"></script> --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        {{-- Script --}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.9/dist/js/uikit-icons.min.js"></script>
-    </body>
+    {{-- End of Script --}}
+</body>
 </html>
