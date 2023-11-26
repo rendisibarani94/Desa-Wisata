@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
 Route::get('/', [App\Http\Controllers\HelloController::class, 'index2'])->name('home');
 Route::get('profil', [App\Http\Controllers\HelloController::class, 'index3'])->name('profil');
+Route::get('alam', [App\Http\Controllers\HelloController::class, 'index4'])->name('profil');
 
