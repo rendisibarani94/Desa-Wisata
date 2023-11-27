@@ -18,4 +18,15 @@ class HelloController extends Controller
     public function index4(){
         return view('user.wisata.alam.index');
     }
+    public function index5(){
+        return view('user.wisata.buatan.index');
+    }
+    public function index6(){
+        return view('user.wisata.budaya.index');
+    }
+    
+    public function index7(){
+        return view('user.wisata.desa.index');
+    }
+
 }

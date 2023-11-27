@@ -18,4 +18,7 @@ Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->na
 Route::get('/', [App\Http\Controllers\HelloController::class, 'index2'])->name('home');
 Route::get('profil', [App\Http\Controllers\HelloController::class, 'index3'])->name('profil');
 Route::get('alam', [App\Http\Controllers\HelloController::class, 'index4'])->name('profil');
+Route::get('buatan', [App\Http\Controllers\HelloController::class, 'index5'])->name('profil');
+Route::get('budaya', [App\Http\Controllers\HelloController::class, 'index6'])->name('profil');
+Route::get('desa', [App\Http\Controllers\HelloController::class, 'index7'])->name('profil');
 
