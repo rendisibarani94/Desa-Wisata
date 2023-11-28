@@ -17,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
 Route::get('/', [App\Http\Controllers\HelloController::class, 'index2'])->name('home');
 Route::get('profil', [App\Http\Controllers\HelloController::class, 'index3'])->name('profil');
-Route::get('alam', [App\Http\Controllers\HelloController::class, 'index4'])->name('profil');
-Route::get('buatan', [App\Http\Controllers\HelloController::class, 'index5'])->name('profil');
-Route::get('budaya', [App\Http\Controllers\HelloController::class, 'index6'])->name('profil');
 Route::get('desa', [App\Http\Controllers\HelloController::class, 'index7'])->name('profil');
+Route::get('desa/alam', [App\Http\Controllers\HelloController::class, 'index4'])->name('profil');
+Route::get('desa/buatan', [App\Http\Controllers\HelloController::class, 'index5'])->name('profil');
+Route::get('desa/budaya', [App\Http\Controllers\HelloController::class, 'index6'])->name('profil');
+Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index1'])->name('pantai1');
+Route::post('createRatings', [App\Http\Controllers\RatingController::class, 'addRating1'])->name('rating1');
+
 
