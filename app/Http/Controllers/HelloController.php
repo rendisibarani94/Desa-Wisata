@@ -28,5 +28,14 @@ class HelloController extends Controller
     public function index7(){
         return view('user.wisata.desa.index');
     }
+    public function index8(){
+        return view('user.akomodasi.homestay');
+    }
+    public function index9(){
+        return view('user.akomodasi.kuliner');
+    }
+    public function index10(){
+        return view('user.akomodasi.kesehatan');
+    }
 
 }
