@@ -29,11 +29,11 @@ p{
 
 {{-- Content --}}
 @section('content')
-<div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="{{ asset('image/all.png') }}" uk-img width="1920" height="1000">
+<div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="{{ asset('image/all.png') }}" uk-img width="1920" height="1000">
     <div class="font mt-2">
         <div class="middle-font1">
-            <h2 style="color: black">Wisata Desa</h2>
-            <h1>Lumban Bul bul</h1>
+            <h2 uk-parallax="y: 100,0"  style="color: black">Wisata Desa</h2>
+            <h1 uk-parallax="y: 100,0" >Lumban Bul bul</h1>
         </div>
     </div>
   </div>

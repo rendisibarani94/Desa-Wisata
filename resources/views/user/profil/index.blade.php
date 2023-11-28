@@ -32,11 +32,11 @@ p{
 
 {{-- Content --}}
 @section('content')
-<div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="{{ asset('image/all.png') }}" uk-img width="1920" height="1000">
+<div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="{{ asset('image/all.png') }}" uk-img width="1920" height="1000">
     <div class="font mt-2">
         <div class="middle-font1">
-            <h2 style="color: black">Tentang Desa</h2>
-            <h1>Lumban Bul bul</h1>
+            <h2 uk-parallax="y: 100,0"  style="color: black">Tentang Desa</h2>
+            <h1 uk-parallax="y: 100,0" >Lumban Bul bul</h1>
         </div>
     </div>
   </div>
@@ -45,13 +45,13 @@ p{
     <h1 class="d-flex justify-content-center" style="font-weight:625; color:#193A6F">Tentang Desa</h1><br>
 
     <div class="row">
-        <div class="col-md-6">
-            <img src="{{ asset('image/profil.png') }}" alt="" width="651" height="403">
+        <div class="col-md-4">
+            <img src="{{ asset('image/profil.png') }}" alt="" style="width: 551; height:450px">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <h3 style="font-weight:700; color:#193A6F">Sejarah Terbentuknya Bulbul</h3>
+                    <h3 style="font-weight:700;">Sejarah Terbentuknya Bulbul</h3>
                     <p>
                         Sejarah terbentuknya pantai Bulbul bisa dibilang cukup dramatis karena dahulu di tahun 2014 pantai yang indah ini belum ada, area pantau masih dipenuhi dengan semak belukar dan bambu serta masih jadi tempat keramba dan jaring apung dari nelayan setempat.
                     </p>

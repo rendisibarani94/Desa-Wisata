@@ -3,7 +3,7 @@
 {{-- master layout --}}
 
 {{-- Judul Tab --}}
-@section('judul_tab','Kesehatan')
+@section('judul_tab','Bank')
 {{-- Judul Tab --}}
 
 {{-- Style --}}
@@ -40,14 +40,14 @@ p{
 
   {{-- Container --}}
   <div class="container mt-lg-5">
-    <h1 class="text-center mb-5" style="font-weight:600">Kesehatan</h1>
+    <h1 class="text-center mb-5" style="font-weight:600">Bank</h1>
     <div class="card mb-5">
         <div class="card-body">
-            <h2 class="text-center">Rumah Sakit Umum Balige</h2>
+            <h2 class="text-center">Bank Mandiri Balige</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{ asset('image/rs-hkbp.png') }}" alt="" style="border: 1px solid black; border-radius:4px; height:350px">
+                        <img src="{{ asset('image/mandiri-balige.png') }}" alt="" style="border: 1px solid black; border-radius:4px; width 450px">
                     </div>
                     <div class="col-md-6">
                         <div class="row mb-2 mt-2">
@@ -56,7 +56,7 @@ p{
 
                             </div>
                             <div class="col-md-10">
-                                <h3 style="font-weight: 600">Buka 00.00 - 24.00</h3>
+                                <h3 style="font-weight: 600">Buka 08.00 - 18.00</h3>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -65,9 +65,7 @@ p{
 
                             </div>
                             <div class="col-md-10">
-                                <h3 style="font-weight: 600">Jl. Gereja No.17, Lumban Dolok
-                                    Haume Bange, Kec. Balige, Toba,
-                                     Sumatera Utara</h3>
+                                <h3 style="font-weight: 600">Jl. Patuan Nagari, Sangkar Nihuta, Kec. Balige, Toba, Sumatera Utara 22313</h3>
                             </div>
                         </div>
                     </div>
@@ -76,10 +74,10 @@ p{
             <div class="container">
                 <div class="container">
                     <p>
-                        Rumah Sakit Umum HKBP Balige adalah sebuah rumah sakit swasta milik Yayasan Kesehatan HKBP yang terletak di Balige, Sumatera Utara, Indonesia.
-    Halaman rumah sakit pada sebuah situs web merupakan pusat informasi penting bagi pengunjung yang mencari layanan medis. Biasanya, halaman tersebut menampilkan informasi yang komprehensif, termasuk alamat lengkap rumah sakit, nomor kontak yang dapat dihubungi, dan jam operasional. 
-    Selain itu, daftar layanan medis yang tersedia, dokter dan spesialis yang bekerja di sana, serta fasilitas yang dimiliki juga seringkali disertakan. Pengunjung juga dapat menemukan formulir janji temu online untuk memudahkan mereka dalam membuat jadwal konsultasi dengan dokter. 
-    Desain yang bersih dan responsif sangat penting untuk memastikan pengalaman pengguna yang baik. Keseluruhan informasi yang ditampilkan di halaman rumah sakit harus terkini dan akurat, membantu pengguna dalam membuat keputusan yang tepat terkait dengan layanan kesehatan yang mereka butuhkan.
+                        Kantor Bank Mandiri Tbk di Kabupaten Toba Samosir, Sumatera Utara.
+
+Kantor bank mandiri ini melayani berbagai keperluan terkait mandiri internet banking / internet banking mandiri, pendaftaran mandiri internet, mandiri banking, bank mandiri internet banking, dan bankmandiri internet banking. Untuk kalangan bisnis juga mandiri internet bisnis, mandiri e banking, m banking mandiri dan banyak layanan untuk kemudahan transaksi online. Layanan lainnya juga meliputi pinjaman bank mandiri, bank syariah mandiri, pendaftaran sms banking mandiri dan mandiri mobile banking.
+Untuk informasi lebih lanjut terkait Bank Mandiri dapat diperoleh dengan datang langsung pada kantor Bank Mandiri terdekat, mengunjungi website resminya, atau mengubungi kontak call center / customer service Bank Mandiri yang tersedia.
                     </p>
                 </div>
                 

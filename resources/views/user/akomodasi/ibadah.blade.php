@@ -40,14 +40,14 @@ p{
 
   {{-- Container --}}
   <div class="container mt-lg-5">
-    <h1 class="text-center mb-5" style="font-weight:600">Kesehatan</h1>
+    <h1 class="text-center mb-5" style="font-weight:600">Ibadah</h1>
     <div class="card mb-5">
         <div class="card-body">
-            <h2 class="text-center">Rumah Sakit Umum Balige</h2>
+            <h2 class="text-center">Gereja HKBP Balige</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{ asset('image/rs-hkbp.png') }}" alt="" style="border: 1px solid black; border-radius:4px; height:350px">
+                        <img src="{{ asset('image/hkbp-balige.png') }}" alt="" style="border: 1px solid black; border-radius:4px; height:350px; width 450px">
                     </div>
                     <div class="col-md-6">
                         <div class="row mb-2 mt-2">
@@ -56,7 +56,7 @@ p{
 
                             </div>
                             <div class="col-md-10">
-                                <h3 style="font-weight: 600">Buka 00.00 - 24.00</h3>
+                                <h3 style="font-weight: 600">Minggu 08.00 - 10.00</h3>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -65,9 +65,7 @@ p{
 
                             </div>
                             <div class="col-md-10">
-                                <h3 style="font-weight: 600">Jl. Gereja No.17, Lumban Dolok
-                                    Haume Bange, Kec. Balige, Toba,
-                                     Sumatera Utara</h3>
+                                <h3 style="font-weight: 600">Jl. Gereja, Balige III, Kec. Balige, Toba, Sumatera Utara 22314</h3>
                             </div>
                         </div>
                     </div>
