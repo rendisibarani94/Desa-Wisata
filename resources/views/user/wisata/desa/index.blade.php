@@ -43,6 +43,50 @@ p{
   <div class="container mt-lg-5">
     <h2 class="d-flex justify-content-center" style="font-weight:625; color:#193A6F">Wisata Desa Lumban Bul-bul</h2>
     <br>
+
+    <div class="row mb-lg-5">
+        <div class="col">
+                    <div class="card">
+                        <center>
+                            <img src="{{ asset('image/new-1.jpg') }}" class="card-img-top mt-4" style="border-radius:5px; width: 375px; height:250px;" alt="...">
+                        </center>
+                        <div class="card-body">
+                          <h3 class="card-title text-center" style="font-weight:600">Wisata Alam</h3>
+                          <center class="mt-4">
+                            <a href="#" class="btn btn-primary">Explore</a>
+                          </center>
+                        </div>
+                      </div>
+        </div>
+
+        <div class="col">
+                    <div class="card">
+                        <center>
+                            <img src="{{ asset('image/new-1.jpg') }}" class="card-img-top mt-4" style="border-radius:5px; width: 375px; height:250px;" alt="...">
+                        </center>
+                        <div class="card-body">
+                          <h3 class="card-title text-center" style="font-weight:600">Wisata Buatan</h3>
+                          <center class="mt-4">
+                            <a href="#" class="btn btn-primary">Explore</a>
+                          </center>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="col">
+                    <div class="card">
+                        <center>
+                            <img src="{{ asset('image/new-1.jpg') }}" class="card-img-top mt-4" style="border-radius:5px; width: 375px; height:250px;" alt="...">
+                        </center>
+                        <div class="card-body">
+                          <h3 class="card-title text-center" style="font-weight:600">Wisata Budaya</h3>
+                          <center class="mt-4">
+                            <a href="#" class="btn btn-primary">Explore</a>
+                          </center>
+                        </div>
+                      </div>
+        </div>
+    </div>
     
   </div>
 

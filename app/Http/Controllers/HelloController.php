@@ -44,4 +44,11 @@ class HelloController extends Controller
         return view('user.akomodasi.ibadah');
     }
 
+    public function index13(){
+        return view('user.paket.index');
+    }
+    public function index14(){
+        return view('user.galeri.index');
+    }
+
 }

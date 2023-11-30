@@ -50,7 +50,7 @@ p{
                     <img src="{{ asset('image/pantai1.png') }}" alt="" width="400" height="450" style="border: 1px solid black; border-radius:4px">
                 </div>
                 <div class="col-md-8">
-                    <h3 style="font-weight:500; color:#193A6F">Pantai I</h3>
+                    <h3 style="font-weight:500; color:#193A6F">Pantai Adat</h3>
                     <p>Pasir putih yang berada dipinggiran pantai ini dan panorama alam yang indah menjadikannya sebuah potensi dan daya tarik wisata, selain itu pantai ini juga cocok untuk dijadikan tempat olahraga air karena airnya yang cukup dangkal dan tenang. Pantai Bulbul memiliki ukuran sekitar 865 meter.</p>
                     <div class="row mt-4">
                         <div class="col-md-6">

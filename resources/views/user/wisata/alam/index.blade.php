@@ -70,7 +70,7 @@ p{
     </div>
     <br>
 
-    <div class="card" style="border: 1px solit black">
+    <div class="card" style="border: 1px solid black">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-4">
@@ -96,7 +96,7 @@ p{
         </div>
     </div>
     <br>
-    <div class="card" style="border: 1px solit black">
+    <div class="card mb-lg-5" style="border: 1px solid black">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-4">

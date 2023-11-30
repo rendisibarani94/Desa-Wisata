@@ -40,7 +40,7 @@ p{
 
   {{-- Container --}}
   <div class="container mt-lg-5">
-    <h1 class="text-center mb-5" style="font-weight:600">Ibadah</h1>
+    <h1 class="text-center mb-5" style="font-weight:600; color:#193A6F">Ibadah</h1>
     <div class="card mb-5">
         <div class="card-body">
             <h2 class="text-center">Gereja HKBP Balige</h2>
