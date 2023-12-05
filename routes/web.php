@@ -38,5 +38,3 @@ Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::clas
 
 // Ratings
 Route::post('createRatings', [App\Http\Controllers\RatingController::class, 'addRating1'])->name('rating1');
-
-

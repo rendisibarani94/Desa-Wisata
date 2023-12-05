@@ -71,7 +71,7 @@
                     <img src="{{ asset('image/new-2.jpg') }}" class="card-img-top" alt="..." style="width: 299px; height:229px; border-radius:5px">
                     <div class="card-body">
                       <h4 class="card-title text-center mb-3" style="font-weight: 600">Pantai II</h4>
-
+                      .container
                         <div class="text-center">
                             <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ini adalah pantai 2 yang ada di </h5>
                         </div>
