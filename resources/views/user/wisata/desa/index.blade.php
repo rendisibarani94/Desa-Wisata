@@ -53,7 +53,7 @@ p{
                         <div class="card-body">
                           <h3 class="card-title text-center" style="font-weight:600">Wisata Alam</h3>
                           <center class="mt-4">
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <a href="{{ route('wisataAlam') }}" class="btn btn-primary">Explore</a>
                           </center>
                         </div>
                       </div>
@@ -67,7 +67,7 @@ p{
                         <div class="card-body">
                           <h3 class="card-title text-center" style="font-weight:600">Wisata Buatan</h3>
                           <center class="mt-4">
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <a href="{{ route('wisataBuatan') }}" class="btn btn-primary">Explore</a>
                           </center>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ p{
                         <div class="card-body">
                           <h3 class="card-title text-center" style="font-weight:600">Wisata Budaya</h3>
                           <center class="mt-4">
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <a href="{{ route('wisataBudaya') }}" class="btn btn-primary">Explore</a>
                           </center>
                         </div>
                       </div>

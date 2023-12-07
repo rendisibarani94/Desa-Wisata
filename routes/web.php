@@ -20,9 +20,9 @@ Route::get('', [App\Http\Controllers\AdminController::class, 'index'])->name('ad
 // Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
 Route::get('/', [App\Http\Controllers\HelloController::class, 'index'])->name('home');
 
-Route::get('profil', [App\Http\Controllers\ProfilController::class, 'index']);
+Route::get('profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('profil');
 
-Route::get('desa', [App\Http\Controllers\DesaController::class, 'index']);
+Route::get('desa', [App\Http\Controllers\DesaController::class, 'index'])->name('wisataDesa');
 
 Route::get('akomodasi/homestay', [App\Http\Controllers\AkomodasiController::class, 'viewHomestay']);
 Route::get('akomodasi/kuliner', [App\Http\Controllers\AkomodasiController::class, 'viewKuliner']);
@@ -30,15 +30,15 @@ Route::get('akomodasi/kesehatan', [App\Http\Controllers\AkomodasiController::cla
 Route::get('akomodasi/bank', [App\Http\Controllers\AkomodasiController::class, 'viewBank']);
 Route::get('akomodasi/ibadah', [App\Http\Controllers\AkomodasiController::class, 'viewIbadah']);
 
-Route::get('desa/alam', [App\Http\Controllers\DesaController::class, 'viewAlam']);
-Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuatan']);
-Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya']);
+Route::get('desa/alam', [App\Http\Controllers\DesaController::class, 'viewAlam'])->name('wisataAlam');
+Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuatan'])->name('wisataBuatan');
+Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya'])->name('wisataBudaya');
 
-Route::get('paket', [App\Http\Controllers\PaketController::class, 'index']);
-Route::get('galeri', [App\Http\Controllers\GaleriController::class, 'index']);
+Route::get('paket', [App\Http\Controllers\PaketController::class, 'index'])->name('paketWisata');
+Route::get('galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
 
 
-Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index']);
+Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index'])->name('pantai1');
 
 // Ratings
 Route::post('createRatings', [App\Http\Controllers\RatingController::class, 'addRating1'])->name('rating1');

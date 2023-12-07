@@ -59,7 +59,7 @@ p{
                         </div>
                         <div class="col-md-6">
                             <br><br>
-                        <a href="#" class="btn" style="background-color: #F98125; width:180px; height:50px; color:white; text-decoration:none; border-radius:50px">
+                        <a href="{{ route('pantai1') }}" class="btn" style="background-color: #F98125; width:180px; height:50px; color:white; text-decoration:none; border-radius:50px">
                             <p class="text-center" style="color: white; font-weight:600; font-size:20px">READ MORE</p>
                         </a>
                         </div>

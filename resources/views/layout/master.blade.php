@@ -35,29 +35,29 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link" href="{{ route('home') }}" style="color: #193A6F">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PROFIL</a>
+                    <a class="nav-link" href="{{ route('profil') }}">PROFIL</a>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         KATEGORI WISATA
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">WISATA ALAM</a></li>
-                        <li><a class="dropdown-item" href="#">WISATA BUATAN</a></li>
-                        <li><a class="dropdown-item" href="#">WISATA BUDAYA</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisataAlam') }}">WISATA ALAM</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisataBuatan') }}">WISATA BUATAN</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisataBudaya') }}">WISATA BUDAYA</a></li>
                       </ul>
                     </li>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">WISATA DESA</a>
+                    <a class="nav-link" href="{{ route('wisataDesa') }}">WISATA DESA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PAKET WISATA</a>
+                    <a class="nav-link" href="{{ route('paketWisata') }}">PAKET WISATA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">GALERI & EVENT</a>
+                    <a class="nav-link" href="{{ route('galeri') }}">GALERI & EVENT</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">LINIMASA</a>

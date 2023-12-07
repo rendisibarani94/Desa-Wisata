@@ -45,7 +45,7 @@
             <h1 style="color: #193A6F; font-weight:600">Wisata Desa Lumban Bul Bul</h1>
         </div>
         <div class="col-3">
-            <a href="#" class="btn" style="background-color: #FF9E53; font-weight:600; border-radius:25px; color:white; padding:13px; text-decoration:none">Selengkapnya...</a>
+            <a href="{{ route('wisataDesa') }}" class="btn" style="background-color: #FF9E53; font-weight:600; border-radius:25px; color:white; padding:13px; text-decoration:none">Selengkapnya...</a>
         </div>
     </div>
     <div class="container mt-4 mb-lg-5">
@@ -61,7 +61,7 @@
                         </div>
                         
                       <div class="text-center">
-                        <a href="#" class="btn btn-primary items-center" style="text-decoration: none">Selengkapnya...</a>
+                        <a href="{{ route('pantai1') }}" class="btn btn-primary items-center" style="text-decoration: none">Selengkapnya...</a>
                       </div>
                     </div>
                   </div>
@@ -71,7 +71,6 @@
                     <img src="{{ asset('image/new-2.jpg') }}" class="card-img-top" alt="..." style="width: 299px; height:229px; border-radius:5px">
                     <div class="card-body">
                       <h4 class="card-title text-center mb-3" style="font-weight: 600">Pantai II</h4>
-                      .container
                         <div class="text-center">
                             <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ini adalah pantai 2 yang ada di </h5>
                         </div>
@@ -107,9 +106,9 @@
         <div class="col">
             <h1 style="color: #193A6F; font-weight:600">Jelajahi Informasi di Desa</h1>
         </div>
-        <div class="col-3">
+        {{-- <div class="col-3">
             <a href="#" class="btn" style="background-color: #FF9E53; font-weight:600; border-radius:25px; color:white; padding-top:13px; padding-bottom:13px; padding-left:20; padding-right:20; text-decoration:none">Jelajahi...</a>
-        </div>
+        </div> --}}
     </div>
 
     <div class="row mb-lg-5 justify-content-center">
