@@ -14,32 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 Route::prefix('admins')->group(function () {
 Route::get('', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
-Route::get('123', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
-
 });
 
 
-Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
-Route::get('/', [App\Http\Controllers\HelloController::class, 'index2'])->name('home');
+// Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
+Route::get('/', [App\Http\Controllers\HelloController::class, 'index'])->name('home');
 
-Route::get('profil', [App\Http\Controllers\HelloController::class, 'index3']);
-Route::get('desa', [App\Http\Controllers\HelloController::class, 'index7']);
+Route::get('profil', [App\Http\Controllers\ProfilController::class, 'index']);
 
-Route::get('akomodasi/homestay', [App\Http\Controllers\HelloController::class, 'index8']);
-Route::get('akomodasi/kuliner', [App\Http\Controllers\HelloController::class, 'index9']);
-Route::get('akomodasi/kesehatan', [App\Http\Controllers\HelloController::class, 'index10']);
-Route::get('akomodasi/bank', [App\Http\Controllers\HelloController::class, 'index11']);
-Route::get('akomodasi/ibadah', [App\Http\Controllers\HelloController::class, 'index12']);
+Route::get('desa', [App\Http\Controllers\DesaController::class, 'index']);
 
-Route::get('desa/alam', [App\Http\Controllers\HelloController::class, 'index4']);
-Route::get('desa/buatan', [App\Http\Controllers\HelloController::class, 'index5']);
-Route::get('desa/budaya', [App\Http\Controllers\HelloController::class, 'index6']);
+Route::get('akomodasi/homestay', [App\Http\Controllers\AkomodasiController::class, 'viewHomestay']);
+Route::get('akomodasi/kuliner', [App\Http\Controllers\AkomodasiController::class, 'viewKuliner']);
+Route::get('akomodasi/kesehatan', [App\Http\Controllers\AkomodasiController::class, 'viewKesehatan']);
+Route::get('akomodasi/bank', [App\Http\Controllers\AkomodasiController::class, 'viewBank']);
+Route::get('akomodasi/ibadah', [App\Http\Controllers\AkomodasiController::class, 'viewIbadah']);
 
-Route::get('paket', [App\Http\Controllers\HelloController::class, 'index13']);
-Route::get('galeri', [App\Http\Controllers\HelloController::class, 'index14']);
+Route::get('desa/alam', [App\Http\Controllers\DesaController::class, 'viewAlam']);
+Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuatan']);
+Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya']);
+
+Route::get('paket', [App\Http\Controllers\PaketController::class, 'index']);
+Route::get('galeri', [App\Http\Controllers\GaleriController::class, 'index']);
 
 
-Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index1'])->name('pantai1');
+Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index']);
 
 // Ratings
 Route::post('createRatings', [App\Http\Controllers\RatingController::class, 'addRating1'])->name('rating1');

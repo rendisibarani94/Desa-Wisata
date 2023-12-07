@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WisataAlamController extends Controller
+class ProfilController extends Controller
 {
     public function index(){
-        return view('user.wisata.alam.pantai1');
+        return view('user.profil.index');
     }
 }

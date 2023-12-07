@@ -73,12 +73,7 @@ p{
             </div><br>
             <div class="container">
                 <div class="container">
-                    <p>
-                        Rumah Sakit Umum HKBP Balige adalah sebuah rumah sakit swasta milik Yayasan Kesehatan HKBP yang terletak di Balige, Sumatera Utara, Indonesia.
-    Halaman rumah sakit pada sebuah situs web merupakan pusat informasi penting bagi pengunjung yang mencari layanan medis. Biasanya, halaman tersebut menampilkan informasi yang komprehensif, termasuk alamat lengkap rumah sakit, nomor kontak yang dapat dihubungi, dan jam operasional. 
-    Selain itu, daftar layanan medis yang tersedia, dokter dan spesialis yang bekerja di sana, serta fasilitas yang dimiliki juga seringkali disertakan. Pengunjung juga dapat menemukan formulir janji temu online untuk memudahkan mereka dalam membuat jadwal konsultasi dengan dokter. 
-    Desain yang bersih dan responsif sangat penting untuk memastikan pengalaman pengguna yang baik. Keseluruhan informasi yang ditampilkan di halaman rumah sakit harus terkini dan akurat, membantu pengguna dalam membuat keputusan yang tepat terkait dengan layanan kesehatan yang mereka butuhkan.
-                    </p>
+                    <p>Gereja ini terbuat dari kayu beratap seng, pertama sekali berdiri tahun 1861. Dimulai oleh lembaga penginjilan dari Jerman, kawasan gereja ini berukuran 1,5 hektar, diatas menara gereja ini juga terdapat lonceng yang sudah tua mulai masuknya Kristen ke tanah batak, gereja ini sangat terawat.</p>
                 </div>
                 
             </div>

@@ -46,7 +46,7 @@ p{
 
     <div class="row">
         <div class="col-md-4">
-            <img src="{{ asset('image/profil.png') }}" alt="" style="width: 551; height:450px">
+            <img src="{{ asset('image/profil.png') }}" alt="" style="width: 551; height:450px; border-radius:5px">
         </div>
         <div class="col-md-8">
             <div class="card">
@@ -122,7 +122,7 @@ p{
                         <h3 class="card-title text-center" style="color: #F98125">Hubungi Kami</h3>
                         <p class="card-text">Kelompok sadar wisata (Pokdarwis) Lumban Bulbul</p>
                         <p>Pengelola desa wisata Lumban Bulbul</p>
-                        <a href="#" class="btn" style="background-color: #F98125; color:white; text-decoration:none">+62 361 154874</a>
+                        <a href="#" class="btn" style="background-color: #F98125; color:white; text-decoration:none">Hubungi</a>
                     </div>
                   
                 </div>
