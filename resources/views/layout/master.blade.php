@@ -20,7 +20,7 @@
         <div class="container">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a href="#"><img src="{{ asset('image/lbb.png') }}" alt="" width="60"></a>
+              <a href="{{ route('home') }}"><img src="{{ asset('image/lbb.png') }}" alt="" width="60"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -86,11 +86,11 @@
                       </div>
                       <div class="col-sm mt-3">
                         <h4 style="color: #FF9E53; font-weight:bold" class="mb-4">Links</h4>
-                        <p class="mb-1"><a href="" style="color: white; font-weight:bold; text-decoration: none;">Home</a></p>
-                        <p><a href="" style="color: white; font-weight:bold; text-decoration: none;">Wisata Desa</a></p>
-                        <p><a href="" style="color: white; font-weight:bold; text-decoration: none;">Paket Wisata</a></p>
-                        <p><a href="" style="color: white; font-weight:bold; text-decoration: none;">Galeri & Event</a></p>
-                        <p><a href="" style="color: white; font-weight:bold; text-decoration: none;">Linimasa</a></p>
+                        <p class="mb-1"><a href="{{ route('home') }}" style="color: white; font-weight:bold; text-decoration: none;">Home</a></p>
+                        <p><a href="{{ route('wisataDesa') }}" style="color: white; font-weight:bold; text-decoration: none;">Wisata Desa</a></p>
+                        <p><a href="{{ route('paketWisata') }}" style="color: white; font-weight:bold; text-decoration: none;">Paket Wisata</a></p>
+                        <p><a href="{{ route('galeri') }}" style="color: white; font-weight:bold; text-decoration: none;">Galeri & Event</a></p>
+                        <p><a href="#" style="color: white; font-weight:bold; text-decoration: none;">Linimasa</a></p>
                       </div>
                       <div class="col-sm mt-3">
                         <h4 style="color: #FF9E53; font-weight:bold" class="mb-4">Contact Info</h4>
