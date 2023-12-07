@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::prefix('admins')->group(function () {
+Route::get('', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+Route::get('123', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+
+});
 
 
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello');
