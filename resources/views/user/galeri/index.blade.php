@@ -41,67 +41,38 @@ p{
 <h1 class="text-center mb-lg-5" style="color:#193A6F">Galeri wisata</h1>
 
 <div class="container mt-4">
-    <div class="row mb-lg-5">
-        <div class="col-1"></div>
+    @php $counter = 0; @endphp <!-- Counter to track the number of items -->
+    @if($galeri != null)
+    @foreach($galeri as $item)
+        @if($counter % 4 == 0) <!-- Start a new row for every 4 items -->
+            <div class="row mb-lg-5">
+        @endif
+
         <div class="col">
             <div class="uk-inline">
-                <img src="{{ asset('image/new-1.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
+                <img src="{{ asset('galeri/' . $item['gambar']) }}" alt="" style="width: 343px; height: 403px; border-radius: 5px">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
-                </div>
-            </div>
-            {{-- <img src="{{ asset('image/new-1.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px"> --}}
-        </div>
-        <div class="col">
-            <div class="uk-inline">
-                <img src="{{ asset('image/new-2.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
+                    <h3 style="color: white; font-weight: 600">{{ $item['judul'] }}</h3>
+                    <p style="color: white;">{{ $item['tanggal'] }}</p>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="uk-inline">
-                <img src="{{ asset('image/new-3.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
-                </div>
+
+        @php $counter++; @endphp <!-- Increment the counter -->
+
+        @if($counter % 4 == 0 || $loop->last) <!-- Close the row if it's the fourth item or the last item -->
             </div>
+        @endif
+    @endforeach
+    
+    @else
+    <div class="d-flex justify-content-center mt-1"> 
+        <h1>Maaf Galeri Belum Tersedia..</h1><br>
         </div>
-    </div>
-    <div class="row mb-lg-5">
-        <div class="col-1"></div>
-        <div class="col">
-            <div class="uk-inline">
-                <img src="{{ asset('image/new-1.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center mt-1  mb-lg-5"> 
+        <a href="{{ route('home') }}" class="btn btn-primary">Kembali Ke Home yuk</a>
         </div>
-        <div class="col">
-            <div class="uk-inline">
-                <img src="{{ asset('image/new-2.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="uk-inline">
-                <img src="{{ asset('image/new-3.jpg') }}" alt="" style="width: 343px; height:403px; border-radius:5px">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
-                    <h3 style="color: white; font-weight:600">SUNSET BULBUL</h3>
-                    <p style="color: white;">May 23 Juli 2023</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endif
 </div>
 
 

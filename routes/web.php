@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 Route::prefix('admins')->group(function () {
 Route::get('', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+
+
+Route::get('galeri', [App\Http\Controllers\GaleriController::class, 'indexAdmin'])->name('admin.galeri');
+Route::get('addGaleri', [App\Http\Controllers\GaleriController::class, 'addGaleri'])->name('addGaleri');
+Route::post('createGaleri', [App\Http\Controllers\GaleriController::class, 'createGaleri'])->name('createGaleri');
+Route::post('deleteGaleri', [App\Http\Controllers\GaleriController::class, 'deleteGaleri'])->name('deleteGaleri');
+
 });
 
 
@@ -35,7 +42,7 @@ Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuat
 Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya'])->name('wisataBudaya');
 
 Route::get('paket', [App\Http\Controllers\PaketController::class, 'index'])->name('paketWisata');
-Route::get('galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
+Route::get('galeris', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
 
 
 Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index'])->name('pantai1');
