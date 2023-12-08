@@ -91,7 +91,7 @@
             <div class="card-body">
               <h5 class="card-title">Galeri</h5>
               <p class="card-text">Kelola Data Galeri</p>
-              <a href="#" class="btn btn-primary">Selengkapnya...</a>
+              <a href="{{ route('admin.galeri') }}" class="btn btn-primary">Selengkapnya...</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="card-body">
               <h5 class="card-title">Linimasa</h5>
               <p class="card-text">Kelola Data Linimasa</p>
-              <a href="#" class="btn btn-primary">Selengkapnya...</a>
+              <a href="{{ route('admin.linimasa') }}" class="btn btn-primary">Selengkapnya...</a>
             </div>
           </div>
         </div>

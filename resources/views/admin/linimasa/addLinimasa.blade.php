@@ -55,7 +55,7 @@
             </div>
             <div class="col">
                 <div class="input-group mb-3" style="border-radius:5px">
-                    <textarea class="form-control border-dark" style="border-radius: 5px" autocomplete="off" id="deskripsiTextarea" name="deskripsi" aria-label="With textarea" placeholder="Masukkan Deskripsi"></textarea>
+                    <textarea class="form-control border-dark" style="border-radius: 5px;" autocomplete="off" id="deskripsiTextarea" name="deskripsi" aria-label="With textarea" placeholder="Masukkan Deskripsi"></textarea>
 
                   </div>
             </div>

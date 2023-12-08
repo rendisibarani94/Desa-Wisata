@@ -113,8 +113,9 @@
                       </div>
                 </div>
             </div>
-            <div class="copyright mt-4">
-                <div class="container">
+            <hr>
+            <div class="copyright mt-2">
+              <div class="container">
                     <center>
                         <p style="color: white; font-weight:bold; font-size:16px;">Copyright © 2023. All rights reserved.</p>
                     </center>

@@ -20,14 +20,14 @@
         <aside id="sidebar">
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <a href="#">Admin</a>
+                    <a href="{{ route('admin') }}">Admin</a>
                 </div>
                 <!-- Sidebar Navigation -->
                 <ul class="sidebar-nav">
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
-                            Akomodasi
+                            Tambah Akomodasi
                         </a>
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
@@ -50,19 +50,19 @@
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
-                            Paket Wisata
+                            Tambah Paket Wisata
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a href="{{ route('addGaleri') }}" class="sidebar-link collapsed" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
-                            Galeri
+                            Tambah Galeri
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a href="{{ route('addLinimasa') }}" class="sidebar-link collapsed" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
-                            Linimasa
+                            Tambah Linimasa
                         </a> 
                     </li>
                 </ul>

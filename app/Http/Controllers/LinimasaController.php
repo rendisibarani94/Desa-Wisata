@@ -16,6 +16,15 @@ class LinimasaController extends Controller
 
         return view('user.Linimasa.index', $data);
     }
+    public function indexAdmin(){
+        $linimasa  = DB::select('CALL viewAllLinimasa()');
+
+        $data['linimasa'] = array_map(function($item) {
+            return (array) $item;
+        }, $linimasa);
+
+        return view('admin.linimasa.index', $data);
+    }
 
     public function addLinimasa(){
         return view('admin.linimasa.addLinimasa');
@@ -54,7 +63,7 @@ class LinimasaController extends Controller
              $gambar->move(public_path('linimasa'), $gambarName); // Move the file to the 'galeri' directory
              
              // Assuming you want to store the file name in the database, adjust this part based on your database schema and Eloquent models
-             $linimasa = DB::select('CALL insertLinimasa(?,?,?)',[$judul, $gambarName, $deskripsi_gambar, $deskripsi]);
+             $linimasa = DB::select('CALL insertLinimasa(?,?,?, ?)',[$judul, $gambarName, $deskripsi_gambar, $deskripsi]);
      
              if($linimasa != null){
                  return redirect()->route('addLinimasa')->with('error', 'Gagal menambahkan data.');
@@ -63,6 +72,17 @@ class LinimasaController extends Controller
              }
          }
          return redirect()->route('addLinimasa')->with('error', 'File gambar tidak ditemukan.');
+    }
+
+    public function deleteLinimasa($id){
+
+        $delete = DB::select('CALL deleteLinimasa(?)', [$id]);
+
+        if($delete != null){
+            return redirect()->route('admin.linimasa')->with('error', 'Gagal menghapus data.');
+        } else {
+            return redirect()->route('admin.linimasa')->with('success', 'Data berhasil dihapus!');
+        }
     }
 
 }

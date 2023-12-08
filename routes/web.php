@@ -21,9 +21,10 @@ Route::get('addGaleri', [App\Http\Controllers\GaleriController::class, 'addGaler
 Route::post('createGaleri', [App\Http\Controllers\GaleriController::class, 'createGaleri'])->name('createGaleri');
 Route::post('deleteGaleri', [App\Http\Controllers\GaleriController::class, 'deleteGaleri'])->name('deleteGaleri');
 
-
+Route::get('Linimasa', [App\Http\Controllers\LinimasaController::class, 'indexAdmin'])->name('admin.linimasa');
 Route::get('addLinimasa', [App\Http\Controllers\LinimasaController::class, 'addLinimasa'])->name('addLinimasa');
 Route::post('createLinimasa', [App\Http\Controllers\LinimasaController::class, 'createLinimasa'])->name('createLinimasa');
+Route::get('deleteLinimasa/{id}', [App\Http\Controllers\LinimasaController::class, 'deleteLinimasa'])->name('deleteLinimasa');
 
 });
 

@@ -59,7 +59,7 @@ p{
     <div class="card mb-3" style="width: 22rem; background-color:#9c9c9cb8">
         <img src="{{ asset('linimasa/'.$item['gambar']) }}" style="height: 290px; width:343px" class="rounded-3 p-2" alt="...">
         <div class="card-body">
-          <p class="card-text clamp-text" style="font-size: 16px" >{{ $item['judul'] }}</p>
+          <p class="card-text clamp-text" style="font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" >{{ $item['judul'] }}</p>
         <div class="d-flex justify-content-center mt-1"> 
             <a href="{{ route('user.article',$item['id_linimasa']) }}" class="btn btn-primary">Selengkapnya..</a>
         </div>

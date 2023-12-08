@@ -59,7 +59,7 @@ p{
                             <h4 style="font-weight:600; line-height:0.1">Sabtu - Minggu : 08.00 - 20.00</h4>
                         </div>
                         <div class="col-md-4">
-                            <h3 style=" color: #193A6F; font-weight:600; line-height:0.1">Kapasitas Pengunjung</h3>
+                            <h3 style=" color: #193A6F; font-weight:600; line-height:0.1">Pengunjung</h3>
                             <h4 style="font-weight:600; line-height:0.1">Kapasitas : 750 Orang</h4>
         
         
