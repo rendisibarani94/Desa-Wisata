@@ -35,7 +35,7 @@
                   <li class="nav-item">
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}" style="color: #193A6F">HOME</a>
+                    <a class="nav-link" href="{{ route('home') }}">HOME</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('profil') }}">PROFIL</a>
@@ -60,7 +60,7 @@
                     <a class="nav-link" href="{{ route('galeri') }}">GALERI & EVENT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">LINIMASA</a>
+                    <a class="nav-link" href="{{ route('user.linimasa') }}">LINIMASA</a>
                   </li>
                 </ul>
               </div>
@@ -90,7 +90,7 @@
                         <p><a href="{{ route('wisataDesa') }}" style="color: white; font-weight:bold; text-decoration: none;">Wisata Desa</a></p>
                         <p><a href="{{ route('paketWisata') }}" style="color: white; font-weight:bold; text-decoration: none;">Paket Wisata</a></p>
                         <p><a href="{{ route('galeri') }}" style="color: white; font-weight:bold; text-decoration: none;">Galeri & Event</a></p>
-                        <p><a href="#" style="color: white; font-weight:bold; text-decoration: none;">Linimasa</a></p>
+                        <p><a href="{{ route('user.linimasa') }}" style="color: white; font-weight:bold; text-decoration: none;">Linimasa</a></p>
                       </div>
                       <div class="col-sm mt-3">
                         <h4 style="color: #FF9E53; font-weight:bold" class="mb-4">Contact Info</h4>

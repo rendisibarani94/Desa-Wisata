@@ -21,6 +21,10 @@ Route::get('addGaleri', [App\Http\Controllers\GaleriController::class, 'addGaler
 Route::post('createGaleri', [App\Http\Controllers\GaleriController::class, 'createGaleri'])->name('createGaleri');
 Route::post('deleteGaleri', [App\Http\Controllers\GaleriController::class, 'deleteGaleri'])->name('deleteGaleri');
 
+
+Route::get('addLinimasa', [App\Http\Controllers\LinimasaController::class, 'addLinimasa'])->name('addLinimasa');
+Route::post('createLinimasa', [App\Http\Controllers\LinimasaController::class, 'createLinimasa'])->name('createLinimasa');
+
 });
 
 
@@ -42,7 +46,10 @@ Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuat
 Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya'])->name('wisataBudaya');
 
 Route::get('paket', [App\Http\Controllers\PaketController::class, 'index'])->name('paketWisata');
+
 Route::get('galeris', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
+
+Route::get('timeline', [App\Http\Controllers\LinimasaController::class, 'index'])->name('user.linimasa');
 
 
 Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index'])->name('pantai1');

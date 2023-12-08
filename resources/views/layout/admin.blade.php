@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pages"
+                        <a href="{{ route('addLinimasa') }}" class="sidebar-link collapsed" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
                             Linimasa
                         </a> 
@@ -91,6 +91,16 @@
     <script src="{{ asset('admin/js/script.js') }}"></script>
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function autoResize() {
+            const textarea = document.getElementById('deskripsiTextarea');
+            textarea.style.height = 'auto';
+            textarea.style.height = (textarea.scrollHeight) + 'px';
+        }
+    
+        document.addEventListener('input', autoResize);
+        window.addEventListener('load', autoResize);
+    </script>
     <script>
         // Tambahkan script SweetAlert2 di sini
         @if (session('success'))

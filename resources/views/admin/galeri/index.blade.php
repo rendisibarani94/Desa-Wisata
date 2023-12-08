@@ -41,7 +41,7 @@ p{
                 
             </div>
             <div class="d-flex justify-content-center mt-1"> 
-                <button class="btn btn-danger mt-1" type="submit">Hapus Galeri</button>
+                <button class="btn btn-danger mt-1" type="submit">Hapus Item</button>
             </div>
             </form>
         </div>
