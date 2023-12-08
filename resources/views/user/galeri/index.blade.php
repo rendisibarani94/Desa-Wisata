@@ -53,7 +53,7 @@ p{
                 <img src="{{ asset('galeri/' . $item['gambar']) }}" alt="" style="width: 343px; height: 403px; border-radius: 5px">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom" style="border-radius: 5px">
                     <h3 style="color: white; font-weight: 600">{{ $item['judul'] }}</h3>
-                    <p style="color: white;">{{ $item['tanggal'] }}</p>
+                    <p style="color: white;">{{ date('j F Y', strtotime($item['tanggal'])) }}</p>
                 </div>
             </div>
         </div>
