@@ -22,8 +22,6 @@
         <a href="{{ route('addLinimasa') }}" class="btn btn-primary">Tambah Linimasa</a>
         </div>
     @php $counter = 0; @endphp
-    {{-- if --}}
-    {{-- foreach --}}
     @if($linimasa != null)
     @foreach($linimasa as $item)
     @if($counter % 4 == 0) <!-- Start a new row for every 4 items -->
@@ -50,7 +48,6 @@
         @if($counter % 4 == 0 || $loop->last) <!-- Close the row if it's the fourth item or the last item -->
             </div>
         @endif
-        {{-- endforeach --}}
     @endforeach
 
     @else

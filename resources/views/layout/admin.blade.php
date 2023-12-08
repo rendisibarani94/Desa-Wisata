@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pages"
+                        <a href="{{ route('addPaket') }}" class="sidebar-link collapsed" data-bs-target="#pages"
                             aria-expanded="false" aria-controls="pages">
                             Tambah Paket Wisata
                         </a>

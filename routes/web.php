@@ -26,6 +26,10 @@ Route::get('addLinimasa', [App\Http\Controllers\LinimasaController::class, 'addL
 Route::post('createLinimasa', [App\Http\Controllers\LinimasaController::class, 'createLinimasa'])->name('createLinimasa');
 Route::get('deleteLinimasa/{id}', [App\Http\Controllers\LinimasaController::class, 'deleteLinimasa'])->name('deleteLinimasa');
 
+Route::get('addPaket', [App\Http\Controllers\PaketController::class, 'addPaket'])->name('addPaket');
+Route::post('createPaket', [App\Http\Controllers\PaketController::class, 'createPaket'])->name('createPaket');
+
+
 });
 
 
@@ -47,6 +51,7 @@ Route::get('desa/buatan', [App\Http\Controllers\DesaController::class, 'viewBuat
 Route::get('desa/budaya', [App\Http\Controllers\DesaController::class, 'viewBudaya'])->name('wisataBudaya');
 
 Route::get('paket', [App\Http\Controllers\PaketController::class, 'index'])->name('paketWisata');
+Route::get('paket/details/{id}', [App\Http\Controllers\PaketController::class, 'detailsPaket'])->name('details.paketWisata');
 
 Route::get('galeris', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
 
