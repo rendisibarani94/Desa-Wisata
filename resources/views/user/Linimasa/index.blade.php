@@ -55,15 +55,17 @@ p{
     @if($counter % 4 == 0) <!-- Start a new row for every 4 items -->
     <div class="row mb-lg-5">
 @endif
-    <div class="card mb-3" style="width: 22rem;">
-        <img src="{{ asset('linimasa/'.$item['gambar']) }}" class="rounded-3 p-3" alt="...">
+    <div class="col">
+    <div class="card mb-3" style="width: 22rem; background-color:#9c9c9cb8">
+        <img src="{{ asset('linimasa/'.$item['gambar']) }}" style="height: 290px; width:343px" class="rounded-3 p-2" alt="...">
         <div class="card-body">
-          <p class="card-text clamp-text " >{{ $item['judul'] }}</p>
+          <p class="card-text clamp-text" style="font-size: 16px" >{{ $item['judul'] }}</p>
         <div class="d-flex justify-content-center mt-1"> 
-            <a href="#" class="btn btn-primary">Selengkapnya..</a>
+            <a href="{{ route('user.article',$item['id_linimasa']) }}" class="btn btn-primary">Selengkapnya..</a>
         </div>
         </div>
     </div> 
+</div>
     @php $counter++; @endphp <!-- Increment the counter -->
 
         @if($counter % 4 == 0 || $loop->last) <!-- Close the row if it's the fourth item or the last item -->

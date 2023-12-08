@@ -50,6 +50,7 @@ Route::get('paket', [App\Http\Controllers\PaketController::class, 'index'])->nam
 Route::get('galeris', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
 
 Route::get('timeline', [App\Http\Controllers\LinimasaController::class, 'index'])->name('user.linimasa');
+Route::get('timeline/{id}', [App\Http\Controllers\LinimasaController::class, 'article'])->name('user.article');
 
 
 Route::get('desa/alam/pantai1', [App\Http\Controllers\WisataAlamController::class, 'index'])->name('pantai1');

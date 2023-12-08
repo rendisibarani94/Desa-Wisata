@@ -21,15 +21,25 @@ class LinimasaController extends Controller
         return view('admin.linimasa.addLinimasa');
     }
 
+    public function article($id){
+        $article = DB::select('CALL viewLinimasaById(?)', [$id]);
+
+    $data['article'] = $article;
+
+    return view('user.Linimasa.article', $data);
+    }
+
     public function createLinimasa(Request $request){
         $request->validate([
             'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'judul' => 'required',
+            'deskripsi_gambar' => 'required',
             'deskripsi' => 'required'
          ]);
      
          $gambar = $request->file('gambar');
          $judul = $request->input('judul');
+         $deskripsi_gambar = $request->input('deskripsi_gambar');
          $deskripsi = $request->input('deskripsi');
      
          if($gambar){
@@ -44,7 +54,7 @@ class LinimasaController extends Controller
              $gambar->move(public_path('linimasa'), $gambarName); // Move the file to the 'galeri' directory
              
              // Assuming you want to store the file name in the database, adjust this part based on your database schema and Eloquent models
-             $linimasa = DB::select('CALL insertLinimasa(?,?,?)',[$judul, $gambarName, $deskripsi]);
+             $linimasa = DB::select('CALL insertLinimasa(?,?,?)',[$judul, $gambarName, $deskripsi_gambar, $deskripsi]);
      
              if($linimasa != null){
                  return redirect()->route('addLinimasa')->with('error', 'Gagal menambahkan data.');

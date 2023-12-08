@@ -41,10 +41,20 @@
         </div>
         <div class="row mb-4">
             <div class="col-3">
-                <label for="inputDeskripsi">Masukkan Deskripsi</label>
+                <label for="inputDeskripsiGambar">Masukkan Deskripsi Singkat Gambar</label>
             </div>
             <div class="col">
                 <div class="input-group mb-3" style="border: 0.5px solid rgb(173, 173, 173); border-radius:5px">
+                    <input type="text" autocomplete="off" name="deskripsi_gambar" class="form-control" id="inputDeskripsiGambar">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-3">
+                <label for="inputDeskripsi">Masukkan Deskripsi</label>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3" style="border-radius:5px">
                     <textarea class="form-control border-dark" style="border-radius: 5px" autocomplete="off" id="deskripsiTextarea" name="deskripsi" aria-label="With textarea" placeholder="Masukkan Deskripsi"></textarea>
 
                   </div>
